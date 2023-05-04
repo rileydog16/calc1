@@ -37,6 +37,18 @@
               "elements": []
             },
             {
+              "id": "image_2",
+              "name": "Image 2",
+              "kind": "Image",
+              "properties": {
+                "source": "https://members-api.parliament.uk/api/Members/4097/Portrait?cropType=OneOne&webVersion=false",
+                "width": 200,
+                "height": 200,
+                "marginBottom": 10
+              },
+              "elements": []
+            },
+            {
               "id": "numberinput_1",
               "name": "Amount",
               "kind": "NumberInput",
