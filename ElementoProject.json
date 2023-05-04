@@ -1,0 +1,86 @@
+{
+  "id": "project_1",
+  "name": "Tax Calculator Project",
+  "kind": "Project",
+  "properties": {},
+  "elements": [
+    {
+      "id": "app1",
+      "name": "Tax App",
+      "kind": "App",
+      "properties": {},
+      "elements": [
+        {
+          "id": "page_1",
+          "name": "Main Page",
+          "kind": "Page",
+          "properties": {},
+          "elements": [
+            {
+              "id": "text_1",
+              "name": "Title",
+              "kind": "Text",
+              "properties": {
+                "content": "Tax Calculator",
+                "fontSize": 32
+              }
+            },
+            {
+              "id": "image_1",
+              "name": "Hero image",
+              "kind": "Image",
+              "properties": {
+                "source": "https://members-api.parliament.uk/api/Members/4134/Portrait?cropType=OneOne&webVersion=false",
+                "width": 200,
+                "height": 200
+              },
+              "elements": []
+            },
+            {
+              "id": "numberinput_1",
+              "name": "Amount",
+              "kind": "NumberInput",
+              "properties": {
+                "label": "Amount"
+              },
+              "elements": []
+            },
+            {
+              "id": "numberinput_2",
+              "name": "Tax Rate",
+              "kind": "NumberInput",
+              "properties": {
+                "label": "Tax %"
+              },
+              "elements": []
+            },
+            {
+              "id": "textinput_1",
+              "name": "Tax Amount",
+              "kind": "TextInput",
+              "properties": {
+                "readOnly": true,
+                "initialValue": {
+                  "expr": "Amount * TaxRate / 100"
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "textinput_2",
+              "name": "Total Amount",
+              "kind": "TextInput",
+              "properties": {
+                "readOnly": true,
+                "initialValue": {
+                  "expr": "Amount + (Amount * TaxRate / 100)"
+                }
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
